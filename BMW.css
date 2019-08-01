@@ -8,15 +8,15 @@
   width: 100%;
 }
 
-.container2 {
+#container2 {
   position: absolute;
   background-color: black;
   width: 100%;
   color: white;
-  margin-top: -200px;
+  /*margin-top: -200px;*/
 }
 
-.logoCentered {
+#logoCentered {
   position: absolute;
   top: 0%;
   left: 50%;
@@ -29,7 +29,7 @@
   left: 8%;
 }
 
-.VolantDdeEssai {
+#VolantDdeEssai {
   position: absolute;
   bottom: 0%;
   right: 4%;
@@ -37,11 +37,11 @@
 
 .box {
   display: flex;
-  width: 100%;
-  height: auto;
+ justify-content: space-around;
 }
 
 .one {
+  flex: 1 1 auto;
   width: 34%;
   padding-left: 8%;
   padding-right: 8%;
@@ -50,22 +50,43 @@
 }
 
 .two {
+  flex: 1 1 auto;
   width: 50%;
-  height: 50%;
 }
 
-.img1et2 {
+.boxR {
+  display: flex;
+  width: 70%;
+  flex-direction: row;
+  border-bottom: 1px solid black;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+}
+
+#boxBas {
+  display: flex;
+  width: 70%;
+  flex-direction: row;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+}
+
+/*.img1et2 {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-}
+}*/
+
+
 
 .img1sur4 {
   opacity: 0.5;
   filter: alpha(opacity=50);
   width: 50%;
-  height: 50%;
+  height: auto;
   margin: 0;
   padding: 0;
   float: left;
@@ -75,7 +96,7 @@
   opacity: 0.5;
   filter: alpha(opacity=50);
   width: 50%;
-  height: 50%;
+  height: auto;
   margin: 0;
   padding: 0;
   float: right;
@@ -85,7 +106,7 @@
   opacity: 0.5;
   filter: alpha(opacity=50);
   width: 50%;
-  height: 50%;
+  height: auto;
   margin: 0;
   padding: 0;
   float: left;
@@ -95,7 +116,7 @@
   opacity: 0.5;
   filter: alpha(opacity=50);
   width: 50%;
-  height: 50%;
+  height: auto;
   margin: 0;
   padding: 0;
   float: right;
@@ -107,11 +128,17 @@ img:hover {
 }
 
 .infogauche {
-  float: left;
+  flex: auto;
+  width: 75%;
 }
 
 .infodroite {
-  float: right;
+  flex: auto;
+  width: 25%;
+}
+
+.textdroite {
+  text-align: right;
 }
 
 #hr {
@@ -129,9 +156,10 @@ img:hover {
 #mc_embed_signup {
   width: 100%;
   margin-left: 42%;
+  margin-top: -25px;
 }
 
-#mce {
+#mce-LNAME, #mce-FNAME, #mce-EMAIL, #mce-PHONE, #mce-MMERGE5, .indicates-required {
   width: 36%;
   height: 60px;
   margin-bottom: 25px;
@@ -141,6 +169,22 @@ img:hover {
   border: none;
   padding-left: 20px;
   margin-left: 7%;
+}
+
+#formulaire {
+  width: 34%;
+  height: auto;
+  background-color: white;
+  margin-left: 7%;
+  margin-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.textform, .indicates-required {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
 }
 
 .button {
@@ -193,6 +237,7 @@ h4 {
   font-size: 48px;
   margin-top: -45px;
   margin-bottom: -45px;
+  text-transform: uppercase;
 }
 
 h5 {
